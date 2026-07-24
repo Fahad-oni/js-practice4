@@ -22,3 +22,13 @@ let strArray = ['c', 'a', 't'];
 let arrayStr = strArray.join('')
 
 console.log(arrayStr);
+
+// Task 2.1 — Case Conversion
+
+let name = '  JavaScript'
+  
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.trim());
+
+
