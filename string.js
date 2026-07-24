@@ -151,4 +151,28 @@ delete user.address.zip;
 console.log(user);
 
 
+// Task 8.1 — Loop Through Properties
+
+let scores = {
+  math: 90,
+  science: 85,
+  art: 95
+};
+
+for (key in scores) {
+  console.log(key,scores[key]);
+}
+
+let sum = 0;
+let count = 0;
+for (key in scores) {
+  sum += scores[key];
+  count++;
+}
+console.log(sum);
+
+let avarage = sum / count;
+
+console.log(avarage);
+
 
