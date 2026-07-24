@@ -1,5 +1,5 @@
 // task-1.1
-let str = 'hello'
+let str = 'hello';
 let arr = ['h', 'e', 'l', 'l', 'o'];
 
 console.log(str.length);
@@ -13,41 +13,39 @@ console.log(arr[0]);
 // task-1.2
 let string = 'JavaScript';
 
-let array = string.split("");
+let array = string.split('');
 
 console.log(array);
 
 let strArray = ['c', 'a', 't'];
 
-let arrayStr = strArray.join('')
+let arrayStr = strArray.join('');
 
 console.log(arrayStr);
 
 // Task 2.1 — Case Conversion
 
-let name = '  JavaScript'
-  
+let name = '  JavaScript';
+
 console.log(name.toUpperCase());
 console.log(name.toLowerCase());
 console.log(name.trim());
 
-
 // task 3.1
 
-let sentence = 'Learning JavaScript is fun!'
+let sentence = 'Learning JavaScript is fun!';
 
 console.log(sentence.slice(0, 8));
 console.log(sentence.slice(-4));
-
 
 // Task 3.2 — Combine Strings
 
 let str1 = 'Hello';
 let str2 = 'World';
 
-console.log(str1.concat(' ',str2));
+console.log(str1.concat(' ', str2));
 console.log(`${str1} ${str2}`);
-console.log(str2+' '+str2);
+console.log(str2 + ' ' + str2);
 
 // task 4.1
 
@@ -71,12 +69,32 @@ function reverseString(str) {
   let reversed = '';
 
   for (let val of str) {
-    
-    
     reversed = val + reversed;
   }
-  return reversed
+  return reversed;
 }
 
 console.log(reverseString('JavaScript'));
+
+// Task 5.1 — Build a Profile Object
+
+let student = {
+  name: 'oni',
+  age: 19,
+  grade: 'A'
+}
+
+console.log(student);
+console.log(student.name);
+
+// task 5.2
+const pc = {
+  processor: 'Amd Ryzen',
+  monitor: 'sumsung',
+  gpu: 'Nvidia'
+};
+
+// JavaScript object is like a pc
+// A pc contains processor,monitor,gpu,motherboard etc.Here each of them contains a value and together they are a pc.
+// like that js object contains many key and values and together we call it an object
 
