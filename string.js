@@ -81,8 +81,8 @@ console.log(reverseString('JavaScript'));
 let student = {
   name: 'oni',
   age: 19,
-  grade: 'A'
-}
+  grade: 'A',
+};
 
 console.log(student);
 console.log(student.name);
@@ -91,10 +91,28 @@ console.log(student.name);
 const pc = {
   processor: 'Amd Ryzen',
   monitor: 'sumsung',
-  gpu: 'Nvidia'
+  gpu: 'Nvidia',
 };
 
 // JavaScript object is like a pc
 // A pc contains processor,monitor,gpu,motherboard etc.Here each of them contains a value and together they are a pc.
 // like that js object contains many key and values and together we call it an object
+
+//Task 6.1 — Dot vs Bracket Notation
+
+let car = {
+  brand: 'Toyota',
+  model: 'Corolla',
+  year: 2022
+};
+
+console.log(car.brand);
+console.log(car['model']);
+
+car['color'] = 'black';
+console.log(car);
+
+car.year = 2023;
+
+console.log(car);
 
