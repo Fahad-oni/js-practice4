@@ -129,3 +129,26 @@ console.log(Object.values(book));
 
 delete book.pages;
 console.log(book);
+
+// Task 7.2 — Nested Objects
+
+let user = {
+  username: "coder123",
+  address: {
+    city: "Austin",
+    zip: "78701"
+  }
+}
+
+console.log(user.address.city);
+
+user.address.country = 'USA';
+
+console.log(user);
+
+delete user.address.zip;
+
+console.log(user);
+
+
+
