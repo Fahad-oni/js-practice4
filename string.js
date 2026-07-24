@@ -40,3 +40,12 @@ console.log(sentence.slice(0, 8));
 console.log(sentence.slice(-4));
 
 
+// Task 3.2 — Combine Strings
+
+let str1 = 'Hello';
+let str2 = 'World';
+
+console.log(str1.concat(' ',str2));
+console.log(`${str1} ${str2}`);
+console.log(str2+' '+str2);
+
