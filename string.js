@@ -49,3 +49,34 @@ console.log(str1.concat(' ',str2));
 console.log(`${str1} ${str2}`);
 console.log(str2+' '+str2);
 
+// task 4.1
+
+// function reverseString(str) {
+//   return str.split('').reverse().join('')
+// };
+
+// console.log(reverseString('JavaScript'));
+
+// function reverseString(str) {
+//   let reversed = '';
+//   for (let i = str.length - 1; i >= 0; i--){
+//     reversed += str[i];
+//   }
+//   return reversed;
+// }
+
+// console.log(reverseString('JavaScript'));
+
+function reverseString(str) {
+  let reversed = '';
+
+  for (let val of str) {
+    
+    
+    reversed = val + reversed;
+  }
+  return reversed
+}
+
+console.log(reverseString('JavaScript'));
+
