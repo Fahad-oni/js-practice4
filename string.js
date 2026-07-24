@@ -116,3 +116,16 @@ car.year = 2023;
 
 console.log(car);
 
+// Task 7.1 — Keys and Values
+
+let book = {
+  title: 'The Hobbit',
+  author: 'Tolkien',
+  pages: 310
+};
+
+console.log(Object.keys(book));
+console.log(Object.values(book));
+
+delete book.pages;
+console.log(book);
