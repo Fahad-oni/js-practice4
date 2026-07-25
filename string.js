@@ -103,7 +103,7 @@ const pc = {
 let car = {
   brand: 'Toyota',
   model: 'Corolla',
-  year: 2022
+  year: 2022,
 };
 
 console.log(car.brand);
@@ -121,7 +121,7 @@ console.log(car);
 let book = {
   title: 'The Hobbit',
   author: 'Tolkien',
-  pages: 310
+  pages: 310,
 };
 
 console.log(Object.keys(book));
@@ -133,12 +133,12 @@ console.log(book);
 // Task 7.2 — Nested Objects
 
 let user = {
-  username: "coder123",
+  username: 'coder123',
   address: {
-    city: "Austin",
-    zip: "78701"
-  }
-}
+    city: 'Austin',
+    zip: '78701',
+  },
+};
 
 console.log(user.address.city);
 
@@ -150,17 +150,16 @@ delete user.address.zip;
 
 console.log(user);
 
-
 // Task 8.1 — Loop Through Properties
 
 let scores = {
   math: 90,
   science: 85,
-  art: 95
+  art: 95,
 };
 
 for (key in scores) {
-  console.log(key,scores[key]);
+  console.log(key, scores[key]);
 }
 
 let sum = 0;
@@ -175,4 +174,33 @@ let avarage = sum / count;
 
 console.log(avarage);
 
+// Task 9.1 — Contact Book
 
+let contact = {
+  name: 'Alex Johnson',
+  email: 'ALEX@EMAIL.COM',
+  phone: '555-1234',
+};
+
+contact.email = contact.email.toLowerCase();
+console.log(contact);
+
+for (key in contact) {
+  console.log(`${key}-${contact[key]}`);
+  
+}
+
+contact.favoriteWords = [];
+console.log(contact);
+contact.favoriteWords.push('Desire', 'Lutu Putu', 'Love');
+console.log(contact);
+
+function objectNameReverse(str) {
+  return str.split('').reverse().join('');
+}
+console.log(contact.name);
+
+
+console.log(objectNameReverse(contact.name));
+
+console.log(contact.email.includes('@email.com'));
